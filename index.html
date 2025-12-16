@@ -424,10 +424,9 @@
         // 4. Vandiep
         // ==========================================
         function startSystem() {
-            document.addEventListener('click', () => {
-            bgMusic.play().catch(()=>{});
-            }, { once: true });
+           document.getElementById('btnStart').style.display = 'none';
 
+            bgMusic.play().catch(e => console.log(e));
             init3D();
 
             const video = document.getElementsByClassName('input_video')[0];
@@ -487,5 +486,6 @@
     </script>
 </body>
 </html>
+
 
 
